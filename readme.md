@@ -35,3 +35,12 @@ Consigli del giorno:
      - invio output all'utente indicando che il login ha avuto successo
    - ALTRIMENTI
      - invio output all'utente indicando che il login non ha avuto successo
+
+### Svolgimento Dadi
+
+1. creo una costante che generi un numero casuale da 1 a 6
+2. inserisco la costante in un ciclo FOR che verrà ripetuto 5 volte
+
+   - ogni numero che esce sarà aggiunto ad un Array
+
+3. creo un altro ciclo for che sommi i numeri usciti salvati nell'Array
