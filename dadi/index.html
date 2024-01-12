@@ -25,11 +25,28 @@
     />
 
     <!-- link css -->
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1 class="m-4">My javascript project</h1>
-    <code class="fs-4 m-4" id="result">int</code>
+    <div class="container">
+      <h1 class="m-4">Gioco dei dadi</h1>
+      <form>
+        <div class="my-4">
+          <label for="dice-number">Con quanti dadi vuoi giocare?</label>
+          <input type="number" id="dice-number" class="form-control" />
+        </div>
+        <button type="button" class="btn btn-primary" id="submit-button">
+          Gioca
+        </button>
+      </form>
+      <div class="row">
+        <div class="col-6" id="player-col">
+          <h3>I tuoi dadi</h3>
+        </div>
+        <div class="col-6" id="cpu-col">
+          <h3>I dadi della cpu</h3>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/main.js"></script>
   </body>
