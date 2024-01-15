@@ -1,7 +1,7 @@
 const EmailArray = ["lory.rox.01@gmail.com", "ciao@gmail.com", "sd@gmail.com"];
 const PswArray = ["1000", "1001", "1002"];
 const submitButton = document.getElementById("submit-button");
-let signIn;
+let signIn = false;
 const resultSuccess = document.getElementById("result-success");
 
 submitButton.addEventListener("click", function () {
@@ -16,10 +16,6 @@ submitButton.addEventListener("click", function () {
     if (userEmail === EmailArray[i] && userPsw === PswArray[i]) {
       signIn = true;
       //   console.log("email giusta");
-      break;
-    } else {
-      signIn = false;
-      //   console.log("email sbagliata");
     }
   }
   console.log(signIn);
@@ -29,6 +25,6 @@ submitButton.addEventListener("click", function () {
     resultSuccess.className = "row justify-content-center d-none";
   } else {
     console.log("Email e/o Password errati, riprova");
-    alert("Email errata");
+    alert("Email e/o Password errati, riprova");
   }
 });
